@@ -78,7 +78,7 @@ ul {
 	text-align: center;
 }
 
-ul li {
+.ratings {
 	background-color: hsl(213, 19%, 20%);
 	color: var(--medium-grey);
 
@@ -88,7 +88,21 @@ ul li {
 	border-radius: 50%;
 
 	padding: 0.9rem 0.9rem;
-	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+
+	cursor: pointer;
+}
+
+.ratings:hover {
+	background-color: var(--medium-grey);
+	color: var(--white);
+
+	transition: all 0.9s ease 0s;
+}
+
+.checked {
+	background-color: var(--orange);
+	color: var(--white);
 }
 
 button {
@@ -102,4 +116,12 @@ button {
 	width: 100%;
 	padding: 1rem;
 	border-radius: 25px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--white);
+	color: var(--orange);
+
+	transition: all 0.7s ease 0s;
 }
