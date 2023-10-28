@@ -28,23 +28,29 @@ body {
 	font-family: "Overpass", sans-serif;
 }
 
-main {
+.container {
 	background-image: linear-gradient(var(--dark-blue), hsl(213, 19%, 12%));
 
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 2rem 1.8rem;
+	padding: 1rem 1.3rem;
 
-	height: 60%;
-	width: 75%;
+	height: 48%;
+	width: 78%;
 
 	border-radius: 16px;
 }
 
-main > * {
-	margin-bottom: 2rem;
+.container > * {
+	margin-top: 1.3rem;
+}
+
+.second {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .icon {
@@ -52,6 +58,8 @@ main > * {
 	height: 3rem;
 	width: 3rem;
 	border-radius: 50%;
+
+	margin-top: 0.5rem;
 
 	position: relative;
 }
@@ -73,22 +81,24 @@ p {
 }
 
 ul {
+	display: flex;
+	user-select: none;
+
 	list-style: none;
 
 	text-align: center;
+	justify-content: space-between;
 }
 
 .ratings {
 	background-color: hsl(213, 19%, 20%);
 	color: var(--medium-grey);
 
-	display: inline-block;
 	height: 0.9rem;
 	width: 0.9rem;
 	border-radius: 50%;
 
 	padding: 0.9rem 0.9rem;
-	margin-left: 0.5rem;
 
 	cursor: pointer;
 }
@@ -124,4 +134,10 @@ button:hover {
 	color: var(--orange);
 
 	transition: all 0.7s ease 0s;
+}
+
+.selected {
+	background-color: var(--orange);
+
+	padding: 0.5rem;
 }
