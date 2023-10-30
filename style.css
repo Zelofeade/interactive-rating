@@ -37,7 +37,7 @@ body {
 	transform: translate(-50%, -50%);
 	padding: 1rem 1.3rem;
 
-	height: 48%;
+	height: 50%;
 	width: 78%;
 
 	border-radius: 16px;
@@ -78,6 +78,8 @@ h1 {
 p {
 	font-size: 1.06rem;
 	color: var(--light-grey);
+
+	text-align: center;
 }
 
 ul {
@@ -137,7 +139,13 @@ button:hover {
 }
 
 .selected {
-	background-color: var(--orange);
+	background-color: var(--dark-blue);
+	color: var(--orange);
 
-	padding: 0.5rem;
+	padding: 0.5rem 0.7rem;
+	margin-bottom: 0.8rem;
+
+	border-radius: 30px;
+
+	font-size: 1rem;
 }
