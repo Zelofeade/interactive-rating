@@ -53,6 +53,10 @@ body {
 	align-items: center;
 }
 
+.hidden {
+	display: none;
+}
+
 .icon {
 	background-color: hsl(213, 19%, 25%);
 	height: 3rem;
@@ -103,6 +107,7 @@ ul {
 	padding: 0.9rem 0.9rem;
 
 	cursor: pointer;
+	user-select: none;
 }
 
 .ratings:hover {
