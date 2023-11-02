@@ -110,13 +110,6 @@ ul {
 	user-select: none;
 }
 
-.ratings:hover {
-	background-color: var(--medium-grey);
-	color: var(--white);
-
-	transition: all 0.9s ease 0s;
-}
-
 .checked {
 	background-color: var(--orange);
 	color: var(--white);
